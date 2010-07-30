@@ -109,3 +109,14 @@
                `~*username* ~username
                `~*password* ~password]
        ~@body)))
+
+
+;;;
+;;; Usage:
+;;; (require ['weave.core :as 'weave])
+;;; 
+;;; (weave/with-weave ["john" "pass"]
+;;;   (let [coll (weave/collections)]
+;;;     (when (contains? coll :tabs)
+;;;       (weave/collection :tabs {}))))
+;;;       
